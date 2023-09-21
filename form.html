@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="gelen_form.html" method="post">
-        <!-- 1 - Kayıt Ön bilgi Alınacak -->
+<!-- 1 - Kayıt Ön bilgi Alınacak -->
         <fieldset>
             <legend>Kayıt Ön Bilgi</legend>
             <br>
@@ -16,29 +16,28 @@
             <input type="text" id="ad">
             <br>
             <label for="soy_ad">Kullanıcı Soyadı: </label>
-            <input type="text" id="ad">
+            <input type="text" id="soy_ad">
             <br>
             <label for="tc_no">TC Kimlik Numarası: </label>
-            <input type="text" id="ad">
+            <input type="text" id="tc_no">
+            <br>
+            <label for="tel_no">Telefon Numarası: </label>
+            <input type="text" id="tel_no" placeholder="+(90)xxx-xxx-xx-xx" required> <!--required zorunlu alanlarda kullanılır-->
             <br>
             <br>
+            <fieldset id="cinsiyet">
+                <label for="cinsiyet">Cinsiyetiniz</label><br>
+                <label for="erk">Erkek</label>
+                <input type="radio" name="cinsiyet" value="Erkek" id="erk">
+                <br>
+                <label for="kdn">Kadın</label>
+                <input type="radio" name="cinsiyet" id="kdn">
+            </fieldset>
         </fieldset>
-        <!-- 1 - Son -->
+<!-- 1 - Son -->
         <br>
         <br>
-        <!-- 2 - Cinsiyet Bilgisi Sorgulanacak -->
-        <div id="cinsiyet">   
-            <label for="cinsiyet">Cinsiyetiniz</label><br>
-            <label for="erk">Erkek</label>
-            <input type="radio" name="cinsiyet" value="Erkek" id="erk">
-            <br>
-            <label for="kdn">Kadın</label>
-            <input type="radio" name="cinsiyet" id="kdn">
-        </div>
-        <!-- 2 - Son -->
-        <br>
-        <br>
-        <!-- 3 - Yazılım Dil Bilgisi Sorgulanacak -->
+<!-- 2 - Yazılım Dil Bilgisi Sorgulanacak -->
         <div id="y_dil">
             <label for="dil">Bilinen Diller</label>
             <br>
@@ -51,10 +50,10 @@
             <input type="checkbox" id="css" value="css" name="deger_3">
             <label for="css">css</label>
         </div>
-        <!-- 3 - Son -->
+<!-- 2 - Son -->
         <br>
         <br>
-        <!-- 4 Yas Bilgisi Alınacak -->
+<!-- 3 - Yas Bilgisi Alınacak -->
         <div>
             <select name="yaslar" id="yas">
                 <option value="9">9 Yaş ve Altı</option>
@@ -67,10 +66,10 @@
                 <option value="16">15 yaş Üstü</option>
             </select>
         </div>
-        <!-- 4 - Son -->
+<!-- 3 - Son -->
         <br>
         <br>
-        <!-- 5 - Askerlik durumu sorgulanacak -->
+<!-- 4 - Askerlik durumu sorgulanacak -->
         <div id="askerlik">
             <fieldset>
                 <legend> Askerlik Durumu</legend>
@@ -82,10 +81,10 @@
                 <input type="radio" name="askerlik" id="asker_mu">
             </fieldset>
         </div>
-        <!-- 5 - Son -->
+<!-- 4 - Son -->
         <br>
         <hr>
-        <!-- 6 - Öneri Yazısı Alınacak-->
+<!-- 5 - Öneri Yazısı Alınacak-->
         <div>
             <label for="not">Önerileriniz :</label>
             <br>
@@ -93,16 +92,22 @@
             </textarea>
             <input type="submit" value="Gönder" >
         </div>
-        <!-- 6 - Son -->
+<!-- 5 - Son -->
         <br>
         <br>
-        <!-- 7 - Form Temizle -->
+<!-- 6 - Randevu tarihi oluştur -->
+        <div>
+            <label for="baslangic"></label>
+            <input type="date" id="g_sonra">
+        </div>
+<!-- 6 - Son -->
+<!-- 7 - Form Temizle -->
         <div>
             <button id="clear_button" type="reset">
                 <img src="sil.png" alt="Sayfayı Temizle" width="120" height="90">
             </button>
         </div>
-        <!-- 7 - Son -->
+<!-- 7 - Son -->
     </form>
     
 </body>
