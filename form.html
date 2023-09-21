@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Bilgi Alış Verişi Deneme</title>
+</head>
+<body>
+    <form action="gelen_form.html" method="post">
+        <!-- 1 - Kayıt Ön bilgi Alınacak -->
+        <fieldset>
+            <legend>Kayıt Ön Bilgi</legend>
+            <br>
+            <label for="ad">Kullanıcı Adı:</label>
+            <input type="text" id="ad">
+            <br>
+            <label for="soy_ad">Kullanıcı Soyadı: </label>
+            <input type="text" id="ad">
+            <br>
+            <label for="tc_no">TC Kimlik Numarası: </label>
+            <input type="text" id="ad">
+            <br>
+            <br>
+        </fieldset>
+        <!-- 1 - Son -->
+        <br>
+        <br>
+        <!-- 2 - Cinsiyet Bilgisi Sorgulanacak -->
+        <div id="cinsiyet">   
+            <label for="cinsiyet">Cinsiyetiniz</label><br>
+            <label for="erk">Erkek</label>
+            <input type="radio" name="cinsiyet" value="Erkek" id="erk">
+            <br>
+            <label for="kdn">Kadın</label>
+            <input type="radio" name="cinsiyet" id="kdn">
+        </div>
+        <!-- 2 - Son -->
+        <br>
+        <br>
+        <!-- 3 - Yazılım Dil Bilgisi Sorgulanacak -->
+        <div id="y_dil">
+            <label for="dil">Bilinen Diller</label>
+            <br>
+            <input type="checkbox" id="java" value="java" name="deger_1">
+            <label for="java">Java</label>
+            <br>
+            <input type="checkbox" id="html" value="html" name="deger_2">
+            <label for="html">html</label>
+            <br>
+            <input type="checkbox" id="css" value="css" name="deger_3">
+            <label for="css">css</label>
+        </div>
+        <!-- 3 - Son -->
+        <br>
+        <br>
+        <!-- 4 Yas Bilgisi Alınacak -->
+        <div>
+            <select name="yaslar" id="yas">
+                <option value="9">9 Yaş ve Altı</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">15 yaş Üstü</option>
+            </select>
+        </div>
+        <!-- 4 - Son -->
+        <br>
+        <br>
+        <!-- 5 - Askerlik durumu sorgulanacak -->
+        <div id="askerlik">
+            <fieldset>
+                <legend> Askerlik Durumu</legend>
+                <label for="asker">Yapıldı</label>
+                <input type="radio" name="askerlik" id="asker_yes">
+                <label for="asker">Yapılmadı</label>
+                <input type="radio" name="askerlik" id="asker_no">
+                <label for="asker">Muaf</label>
+                <input type="radio" name="askerlik" id="asker_mu">
+            </fieldset>
+        </div>
+        <!-- 5 - Son -->
+        <br>
+        <hr>
+        <!-- 6 - Öneri Yazısı Alınacak-->
+        <div>
+            <label for="not">Önerileriniz :</label>
+            <br>
+            <textarea name="aciklama" id="not" cols="90" rows="6">
+            </textarea>
+            <input type="submit" value="Gönder" >
+        </div>
+        <!-- 6 - Son -->
+        <br>
+        <br>
+        <!-- 7 - Form Temizle -->
+        <div>
+            <button id="clear_button" type="reset">
+                <img src="sil.png" alt="Sayfayı Temizle" width="120" height="90">
+            </button>
+        </div>
+        <!-- 7 - Son -->
+    </form>
+    
+</body>
+</html>
