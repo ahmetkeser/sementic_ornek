@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İn line HTML</title>
+    <!-- External css bölgesi v -->
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+
+    <!-- İnternal style deneme bölgesi v bu yapı kaldırılırsa hazırda
+    bekleyen deneme css dosyası devreye girerek özellikler değişir
+fakat herzaman inline > internal > css dosyasını ezer  -->
+    <style>
+        h3 {
+            color :blueviolet;
+            font-size: 11px;
+        }
+        p {
+            color:brown;
+            font-size: 21px;
+        }
+        h2 {
+            color:rgb(89, 0, 255);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline style deneme völgesi -->
+    <h1 style="color:darkgrey; font-size:28px;">h1 inline style deneme yazısı</h1>
+    <h3>İnternal style h3 deneme yazısı</h3>    
+    <p style="color:darkseagreen;">p inline style deneme yazısı</p>
+    <p>internal style p deneme yazısı</p>
+    <h1>External css tarafından düzenlenen h1 tagı</h1>
+    <h2>External ezen internal h1 tagı</h2>
+    <!-- Burada css clas yapısı kullanılacak -->
+    <h1 class="deneme_class">Deneme css class yapısı</h1>
+    <p class="fs_16 text_green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam assumenda reiciendis velit. Esse laborum aspernatur at nisi unde modi ut voluptate?</p>
+
+</body>
+</html>

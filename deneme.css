@@ -1,0 +1,33 @@
+/* Açıklama */
+h3 {
+    color :black;
+    font-size: 11px;
+}
+p {
+    color:black;
+    font-size: 21px;
+}
+h1 {
+    color:yellow;
+    font-size: 54px;
+    font-family: 'Black Ops One', cursive; /* google fonts tan link ile font alındı*/
+}
+h2 {
+    color:yellow;
+    font-size: 54px;
+}
+.deneme_class {
+    color:pink;
+}
+.fs_8 {
+    font-size: 8px;
+}
+.fs_14 {
+    font-size: 14px;
+}
+.fs_22 {
+    font-size: 22px;
+}
+.text_green {
+    color:green;
+}
